@@ -1,0 +1,562 @@
+/*CODE ATTRIBUTION*/
+/*TITLE: IIE WEDE5020 Module Manual 2025*/
+/*AUTHOR: The Independent Institute of Education (Pty) Ltd*/
+/*DATE: 07/03/2025*/
+/*VERSION: 1.0*/
+/*AVAILABLE: https://advtechonline.sharepoint.com/:w:/r/sites/TertiaryStudents/_layouts/15/Doc.aspx?sourcedoc=%7B2D7589E9-374B-43DE-9596-EF35D83EBD02%7D&file=WEDE5020MM.docx&action=default&mobileredirect=true*/
+
+/*CODE ATTRIBUTION*/
+/*TITLE: movieWeb*/
+/*AUTHOR: afsaana03*/
+/*DATE: 26/09/2025*/
+/*VERSION: 1.7*/
+/*AVAILABLE: https://github.com/afsaana03/movieWeb*/
+
+/*CODE ATTRIBUTION*/
+/*TITLE: CSS Styling Buttons*/
+/*AUTHOR: W3 schools*/
+/*DATE: 29/09/2025*/
+/*VERSION: 1.0*/
+/*AVAILABLE: https://www.w3schools.com/css/css3_buttons.asp*/
+
+/*Navigation bar styling*/
+.nav {
+    list-style-type: none; /*removes bullet points*/
+    margin: 0; /*resets margins*/
+    padding: 0; /*reses padding*/
+    background: #ffffff; /*sets background to white*/
+    overflow: hidden;
+    border-bottom: 0.0625rem solid #595959; /*underlines the section*/
+    display: flex; /*flex allows menu alignment to be controlled*/
+    flex-wrap: wrap; /*pushes menu to new line on smaller screens*/
+    align-items: center; /*puts menu items in the center of the bar*/
+    justify-content: center; /*adds space between menu items*/
+}
+
+ul.nav li a {
+    color: #3c4f12; /*text colour*/
+    text-decoration: none;  /* Removes the underline from the links */
+    display: flex; /*flex allows menu alignment to be controlled*/
+    padding: 0.875rem 1.25rem; /*Adds spacing around the link for a box*/
+    font-weight: bold; /*makes font bold*/
+    transition: background-color 0.3s, color 0.3s; /*block transition when you hover over different menu items*/
+}
+
+ul.nav li a:hover {
+    background-color: #f3f6eb; /*box changes colour when you hover over menu item*/
+    color: #3c4f12; /*text colour*/
+    border-radius: 0.5rem; /*rounds corners on hover box*/
+}
+
+
+/*general typography styling*/
+body { 
+    font-family: Georgia, serif; /*sets the website font*/
+    background-color: #fff0f0; /*sets the backround colour*/
+    margin: 0%; /*resets margins*/
+    padding: 0%; /*resets padding*/
+    color: #595959; /*text colour*/
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    text-align: left; /*sets all text to the left of the screen*/
+    margin: 0%; /*resets margins*/
+    padding-left: 2rem; /*stops text from touching the left screen side*/
+    padding-right: 2rem; /*stops text from touching the right screen side*/
+}
+
+
+/*card styling*/
+.cardContainer {
+    display: flex; /*flex allows menu alignment to be controlled*/
+    flex-wrap: wrap; /*pushes menu to new line on smaller screens*/
+    align-items: center; /*puts menu items in the center of the bar*/
+    justify-content: center; 
+    text-align: center;
+    padding: 1rem; /*adds space round the cards*/
+    gap: 1rem; /*adds space between menu items*/
+}
+
+.card {
+    background-color: #ffffff; /*sets the backround colour*/
+    border: 0.0625rem solid #595959; /*border colour*/
+    border-radius: 0.75rem; /*rounds the cards on the images*/
+    padding: 1.25rem; /*Adds spacing around the card contents*/
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-sizing: border-box;
+    width: 20rem; /*sets the card width*/
+    margin-top: 0rem auto; /*centers the container horizontally with 2rem gap around*/
+
+}
+
+.card img {
+    width: 50%; /*sets the image width*/
+    height: 50%; /*sets the image height*/
+    border-radius: 1rem; /*rounds the corners on the images*/
+    border: 0.0625rem solid #595959; /*border colour*/
+    margin-bottom: 1rem;
+}
+
+
+/*image styling*/
+.image {
+    width: 50%;  /*sets the image width*/
+    height: auto;  /*sets the image height*/
+    display: flex; /*flex allows menu alignment to be controlled*/
+    flex-wrap: wrap; /*pushes menu to new line on smaller screens*/
+    align-items: center; /*puts item in the center of the container*/
+    justify-content: center; 
+    border-radius: 1rem; /*rounds the corners on the images*/
+    border: 0.0625rem solid #595959; /*border colour*/
+}
+
+
+/*basic container styling*/
+.containerGreen, .containerPink, .container, footer {
+    border-bottom: 0.0625rem solid #595959; /*underlines the section*/
+    margin: 0%; /*resets default margins*/
+    box-sizing: border-box;
+    padding-bottom: 1rem; /*adds padding to the bottom of the containers*/
+}
+
+.containerGreen {
+    background-color: #f3f6eb; /*sets the backround colour*/
+}
+
+.containerPink {
+    background-color: #fff0f0; /*sets the backround colour*/
+}
+
+.container {
+    background-color: #f0cbc3; /*sets the backround colour*/
+}
+
+
+/*header styling*/
+.header-img {
+    width: 100%;  /*sets the image width*/
+    height: auto; /*sets the image height*/
+    border-bottom: 0.0625rem solid #595959; /*underlines the section*/
+    filter: opacity(80%); /*makes the image slightly transparent*/
+}
+
+.headerContainer {
+    position: relative; /*allows absolute positioning of child elements*/
+    text-align: center; /*centers the text*/
+    color: white;  /*text colour*/
+}
+
+.header-text {
+    font-family: Georgia, serif; /*sets the website font*/
+    color: #30410a; /*text colour*/
+    font-size: 1.75rem; /*sets the font size*/
+    text-align: center; /*centers the text*/
+    padding-right: 60%; /*adds padding to the bottom of the text*/
+    position: absolute; /*allows precise positioning*/
+    top: 2.5rem; /*sets the distance from the top*/
+    left: 16px; /*sets the distance from the left*/
+}
+
+
+/*button styling*/
+.buttonContainer {
+    display: flex; /*flex allows menu alignment to be controlled*/
+    justify-content: center; /*centers the button horizontally*/
+    align-items: center; /*puts item in the center of the container*/
+    padding: 1rem; /*adds padding to the bottom of the container*/
+}
+
+button {
+    padding: 0.7rem 1.5rem; /*adds padding to the sides of the button*/
+    background-color: #3c4f12; /*sets the backround colour*/
+    font-family: Georgia, serif; /*sets the website font*/
+    color: #ffffff;  /*text colour*/
+    border: 0.0625rem solid #3c4f12; /*sets the border thickness and colour*/
+    border-radius: 0.5rem; /*rounds the button corners*/
+    cursor: pointer; /*changes the default pointer*/
+    font-weight: bold; /*makes the text bold*/
+    transition: background-color 0.3s; /*adds a colour transition*/
+}
+
+button:hover {
+    background-color: #ffffff; /*sets the backround colour*/
+    border: 0.0625rem solid #3c4f12; /*sets the border thickness and colour*/
+    color: #3c4f12; /*text colour*/
+    transition: background-color 0.3s; /*adds a colour transition*/
+}
+
+
+/*form styling*/
+form {
+    display: flex; /*flex allows menu alignment to be controlled*/
+    flex-direction: column; /*stacks everything vertically*/
+    align-items: flex-start; /* Align elements to left */
+    margin: 1.25rem auto; /*adds a margin*/
+    width: 80%; /*sets the image width*/
+}
+
+input, textarea {
+    font-family: Georgia, serif; /*sets the  font*/
+    width: 100%; /*sets the input width*/
+    padding: 0.5rem; /*adds padding*/
+    margin-top: 0.25rem; /*adds a margin to the top*/
+    margin-bottom: 1rem; /*adds a margin to the top*/
+    border-radius: 0.5rem; /*rounds the corners*/
+    border: 0.0625rem solid #3c4f12; /*sets the border thickness and colour*/
+    background-color: #ffffff; /*sets the backround colour*/
+    color: #595959; /*text colour*/
+}
+
+::placeholder {
+    text-align: left; /*keeps the text to the left*/
+}
+
+
+/*location styling*/
+.location {
+    margin: 3rem; /*adds a margin*/
+    border-bottom: 0.00025rem solid #595959; /*underlines the section*/
+    padding-top: 1rem; /*adds padding to the top*/
+}
+
+.location iframe {
+    width: 50%; /*sets the width*/
+    height: 10%; /*sets the height*/
+    padding-left: 1rem; /*adds padding to the left*/
+    padding-bottom: 2rem; /*adds padding to the bottom*/
+}
+
+/* Accordion styling*/
+.accordion {
+    display: flex; /*flex allows menu alignment to be controlled*/
+    flex-wrap: wrap; /*pushes menu to new line on smaller screens*/
+    align-items: center; /*puts item in the center of the container*/
+    justify-content: center; 
+}
+
+.accordion-btn {
+    border-radius: 0.1rem; /*rounds the button corners*/
+    padding: 12px 24px; /*adds padding*/
+    width: 70%; /*sets the width*/
+    background-color: #3c4f12; /*sets the backround colour*/
+    color: #fff; /*text colour*/
+    border: none; /*removes default button border*/
+    cursor: pointer; /*changes the default pointer*/
+    font-weight: bold; /*makes the text bold*/
+    transition: background-color 0.3s; /*adds a colour transition*/
+    margin-top: 0.3rem; /*adds margin to the top*/
+}
+
+.active, .accordion-btn:hover {
+    background-color: #687943; /*sets the backround colour*/
+    color: #fff; /*text colour*/
+}
+
+.panel {
+    padding: 12px 24px; /*adds padding*/
+    width: 65.3%; /*sets the width*/ 
+    background-color: #a8bb80; /*sets the backround colour*/  
+    color: #000; /*text colour*/
+    display: none; /*hides the panel by default*/
+    max-height: 0; /*sets the max height to 0*/
+    overflow: hidden; /*hides overflow content*/
+    transition: max-height 0.2s ease-out; /*adds a transition effect*/
+}
+
+/*Tab styling*/
+.tabContainer {
+    margin: 0 auto;
+    width: 80%; /*sets the width*/
+    border: 0.0625rem solid #595959; /*underlines the section*/
+    background-color: #f3f6eb; /*sets the backround colour*/
+    padding: 0.5rem; /*adds padding*/
+}
+
+.tab {
+    overflow: hidden; /*clears floats*/
+    border: 0.0625rem solid #969696; /*sets the border thickness and colour*/
+    background-color: #f0cbc3; /*sets the backround colour*/
+    margin: 0 auto; /*centers the tab section*/
+}
+
+.tab button {
+    border-radius: 0rem; /*removes button rounding*/
+    background-color: inherit; /*sets the backround colour to match the tab section*/
+    float: left; /*aligns buttons to the left*/
+    border: none; /*removes default button border*/
+    outline: none; /*removes default button outline*/
+    cursor: pointer; /*changes the default pointer*/
+    padding: 14px 16px; /*adds padding to the button*/
+    transition: 0.3s; /*adds a transition to the button*/
+}
+
+.tab button:hover {
+    background-color: #fff0f0; /*sets the backround colour*/
+    color: #000 /*text colour*/
+}
+
+.tab button.active {
+    background-color: #fff0f0; /*sets the backround colour*/
+    color: #000 /*text colour*/
+}
+
+.tabcontent {
+    display: none; /*hides the tab content by default*/
+    padding: 6px 12px; /*adds padding*/
+    border-top: none; /*removes the top border*/
+}
+
+.tabcontent ul {
+    list-style-type: none; /*removes bullet points*/
+}
+
+ /* Gallery */
+
+    .galleryContainer {
+        background-color: #ffffff; /*sets the backround colour*/
+        border: 0.0625rem solid #595959; /*border colour*/
+        padding: 1.25rem; /*Adds spacing around the card contents*/
+        transition: transform 0.2s, box-shadow 0.2s;
+        box-sizing: border-box;
+        width: 80%; /*sets the card width*/
+        margin: 2rem auto; /*centers the container horizontally with 2rem gap around*/
+    }
+
+    .gallery {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center; /*centers the gallery images horizontally*/
+    align-items: center; /*centers the gallery images vertically*/
+    }
+
+    .gallery img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    }
+
+    .gallery img:hover {
+    transform: scale(1.05);
+    }
+
+    .lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    }
+
+    .lightbox-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    cursor: default;
+    }
+
+    .close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    z-index: 10000;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .close:hover {
+    background: rgba(0, 0, 0, 0.8);
+    }
+
+/*media tag styling (styling for small screens)*/
+@media (max-width: 600px) {
+    .gallery img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 8px;
+    }
+
+    .gallery {
+        gap: 0.5rem;
+    }
+
+    .galleryContainer {
+        width: 70%; /*sets the card width*/
+        margin: 2rem auto; /*centers the container horizontally with 2rem gap around*/
+    }
+
+    .cardContainer {
+        flex-direction: column; /*makes menu items stack vertically on small screens*/
+         align-items: center; /*puts menu items in the center of the bar*/
+    }
+
+    .card {
+        width: 12rem; /*sets the card width*/
+        padding: 0.75rem; /*Adds spacing around the card contents*/
+    }
+
+    .card img {
+        width: 35%; /*sets the width*/
+        height: 35%; /*sets the height*/
+        border-radius: 0.5rem; /*rounds the corners on the images*/
+        margin-bottom: 0.5rem;
+    }
+
+    h1, h2, h3, h4, h5, h6, p {
+        padding-left: 1rem; /*adds spacing between text and the edge of the screen*/
+        font-size: 2vw;
+    }
+
+    .location {
+        margin: 1rem; /*adds a margin*/
+        border-bottom: 0.00025rem solid #595959; /*underlines the section*/
+        padding-top: 0.5rem; /*adds padding to the top*/
+    }
+
+    .location iframe {
+        width: 50%; /*sets the width*/
+        height: 7rem; /*sets the height*/
+        padding-left: 0.5rem; /*adds padding to the left*/
+        padding-bottom: 1rem; /*adds padding to the bottom*/
+    }
+
+    .image {
+        width: 25%; /*sets the image size to match the screen size*/
+        height: auto; /*sets the height*/
+    }
+
+    button {
+        padding: 0.35rem 0.75rem; /*adds padding*/
+        font-size: 85%; /*sets the font size*/
+    }
+
+    ul.nav li a{
+        font-size: 65%;
+        padding: 0.55rem 1.25rem;
+    }
+
+    .cardContainer {
+        padding: 0.5rem; /*adds space round the cards*/
+        gap: 0.5rem; /*adds space between menu items*/
+    }
+
+    .accordion-btn {
+        border-radius: 0.1rem; /*rounds the button corners*/
+        padding: 12px 24px;
+        width: 70%;
+        margin-top: 0.15rem;
+        font-size: 65%;
+    }
+
+    .panel {
+        padding: 12px 24px;
+        width: 61.5%;
+        font-size: 65%;
+    }
+
+    .header-text {
+        font-size: 1.4rem; /*sets the font size*/
+    }
+
+    /* Vertical tab layout for small screens */
+    .tabContainer {
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+    }
+
+    .tab {
+        float: none;
+        width: 30%;
+        border: none;
+        border: 0.0625rem solid #969696;
+    }
+
+    .tab button {
+        display: block;
+        width: 100%;
+        float: none;
+        text-align: left;
+        padding: 10px 12px;
+        font-size: 65%;
+    }
+
+    .tabcontent {
+        width: 70%;
+        padding: 10px;
+        border-left: none;
+        font-size: 65%;
+    }
+}
+
+#caption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #f1f1f1;
+  font-size: 18px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+@media (min-width: 1100px) {
+    .header-text {
+        font-size: 3rem; /*sets the font size*/
+        position: absolute; /*allows precise positioning*/
+        top: 6rem; /*sets the distance from the top*/
+        left: 16px; /*sets the distance from the left*/
+    }
+    .gallery img {
+        width: 20rem;
+        height: 20rem;
+        border-radius: 8px;
+    }
+
+    .gallery {
+        gap: 3rem;
+    }
+
+    .galleryContainer {
+        width: 80%; /*sets the card width*/
+        margin: 2rem auto; /*centers the container horizontally with 2rem gap around*/
+    }
+
+    .card img {
+        width: 20rem;
+        height: 20rem;
+        border-radius: 0.0625rem;
+    }
+
+    .card {
+        margin-top: 0rem auto; /*centers the container horizontally with 2rem gap around*/
+        width: 30rem; /*sets the card width*/
+    }
+
+    .cardContainer {
+        padding: 2rem; /*adds space round the cards*/
+        gap: 2rem; /*adds space between menu items*/
+    }
+}
